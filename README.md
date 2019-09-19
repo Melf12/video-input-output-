@@ -14,7 +14,6 @@ Jeg har så trænet programmet til at gøre width og height større, når hånde
 Det jeg har lavet kan sagtens gøres bedre ved at tilføje flere outputs end de 2 jeg har. Herfra kan man også ændre x og y værdien på rektanglen.
 
 Typen af reggression jeg bruger i denne opgave er "Neural Network". 
-Jeg bruger denne type regression fordi, da det er den mest præcise specielt til meget data, men det er nok ikke den mest optimale. 
-Det tager meget lang tid at træne data'en og resultatet er nogenlunde det samme som lineær eller polonomiel.
-Jeg har testet både lineær og polonomiel regressions modeller. Træningen af data er meget hurtigere og til det simple program jeg laver, vil det nok være tilstrækkelig præcist. 
-et er dog ikke
+Jeg bruger denne type regression fordi, da det er den mest præcise specielt til meget data, men det er nok ikke den mest optimale. Neural network er også meget følsomt overfor støj, altså lysstyrke og bevægelser losv.
+Det tager meget lang tid at træne data'en og resultatet er nogenlunde det samme som polonomiel-3grads.
+Jeg har testet både lineær og polonomiel regressions modeller. Træningen af data er meget hurtigere og til det simple program jeg laver, vil det nok være tilstrækkelig præcist at bruge polonomiel. Lineær virker ikke mega godt.
