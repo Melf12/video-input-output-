@@ -1,19 +1,8 @@
-# video-input-output-
-
+# Lyd output fra webcame (Nærkontakt fra 3 grad"
+Filen som i skal kigge i er "SimpleVideoInputWithProcessing_100Inputs_lydoutput.pde"
 Mit projekt:
+I dette wekinator projekt, skulle vi integrere nogen lyde fra "nærkontakt af 3 grad" ind som et output. Jeg har brugt kamareret som input, hvor jeg så styrer hvilke beævgelser der skal give de forskellige lyde som outputs. Jeg har kommenteret de steder, hvor jeg har ændret koden i processing filen. Jeg har prøvet at lave nogen træningsdata til denne sketch med de 6 forskellige lydklasser, 1 værende intet støj. Herefter præøvde jeg at træne programmet til at spille de forskellige toner udfra håndbevægelser. Når jeg havde hånden åben, så stoppede lyden (klasse 1), når jeg kun havde løftet 1 finger, skulle første tone spille, 2 fingre anden tone osv. En så lille ændring var ret svær at få til at fungere, da der var en masse støj igennem små bevægelser og wekinator havde svært ved at gennemskue hvilken af klasserne den skulle spille. Det ville derfor her være relevant, at udnytte den metode, hvor wekinator først ændrer klassen efter den har konkluderet at fx 95% af bevægelsen havde ændret sig. Dette ville gøre det nemmere at udelukke noget af støjen. Det vil måske også gøre det nemmere hvis jeg brugte større bevægelser, måske bevæglse af hovedet. 
 
 
-Jeg har lavet til denne tk-dig aflevering, hvor jeg har brugt webcamet. 
-Jeg har taget mit webcam, som på nuværende tidspunkt fungere som et input og gjort det til et output også.
-Det fungere således, at når man åbner sin hånd, så vokser der en rektangel på skærmen. 
-Samtidig, vil denne rektangel blive mindre, når man lukker hånden og herved kan man regulere størrelsen af denne rektangel med hånden.
-For at gøre dette har jeg været inde i koden for webcamets input og derfra har jeg tilføjet en ny OscP5, med porten 12000. 
-Jeg har derefter lavet en oscEvent, til min OscP5, som opsamler det input, webcamet får. Dette input altså oscmessage, har jeg taget og flyttet ind i en rektangels parametre (width og height)
-Dvs. med mine inputs kan jeg nu træne wekinator, til at gøre min rektangel større og mindre altefter forskellige bevægelser. 
-Jeg har så trænet programmet til at gøre width og height større, når hånden foran skærmen åbner sig ved at tage en masse test samples.
-Det jeg har lavet kan sagtens gøres bedre ved at tilføje flere outputs end de 2 jeg har. Herfra kan man også ændre x og y værdien på rektanglen.
 
-Typen af reggression jeg bruger i denne opgave er "Neural Network". 
-Jeg bruger denne type regression fordi, da det er den mest præcise specielt til meget data, men det er nok ikke den mest optimale. Neural network er også meget følsomt overfor støj, altså lysstyrke og bevægelser losv.
-Det tager meget lang tid at træne data'en og resultatet er nogenlunde det samme som polonomiel-3grads.
-Jeg har testet både lineær og polonomiel regressions modeller. Træningen af data er meget hurtigere og til det simple program jeg laver, vil det nok være tilstrækkelig præcist at bruge polonomiel. Lineær virker ikke mega godt.
+
